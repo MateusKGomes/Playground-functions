@@ -35,13 +35,20 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(numbers) {
+  let highestNumber = Math.max(...numbers);
+  let highestNumberCount = 0;  {
+    for (let index = 0; index < numbers.length; index += 1) {
+      if(numbers[index] === highestNumber){
+      highestNumberCount += 1;
+      }
+    }
+  }  return highestNumberCount 
+
+  }
 
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
 }
 
 // Desafio 8
@@ -62,7 +69,7 @@ function techList() {
   // seu código aqui
 }
 
-module.exports = {
+  module.exports = {
   calcArea,
   catAndMouse,
   compareTrue,
