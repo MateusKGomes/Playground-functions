@@ -2,8 +2,10 @@
 function compareTrue(param1, param2) {
   if(param1 === true && param2 === true) {
   return true; 
-} 
+} else {
   return false; 
+}
+  
 }
 
 
@@ -64,8 +66,20 @@ function catAndMouse(mouse, cat1, cat2) {
 
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+function fizzBuzz(array) {
+  let results = [];
+  for (let index = 0; index < array.length; index += 1){
+  if (array[index] % 3 === 0 && array[index] % 5 >= 1) {
+  results.push('fizz');
+} else if (array[index] % 3 === 0 && array[index] % 5 === 0){
+  results.push('fizzBuzz');
+} else if (array[index] % 5 === 0 && array[index] % 3 >= 1){
+  results.push('buzz');
+} else if(array[index] % 3 !== 0 && array[index] % 5 !== 0)
+  results.push('bug!');
+} 
+return results
 }
 
 // Desafio 9
